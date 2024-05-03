@@ -1,39 +1,52 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Task Manager Mini-Project
 
-Welcome,
+## About
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This Task Manager application is built using the Flask framework, SQLAlchemy ORM, and Materialize CSS framework. It serves as a practical example of implementing CRUD (Create, Read, Update, Delete) operations in a web application. The app provides an intuitive graphical user interface for managing tasks efficiently.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Features
 
-## Codeanywhere Reminders
+- **Create Tasks**: Add new tasks with details.
+- **Read Tasks**: View all tasks in a user-friendly interface.
+- **Update Tasks**: Modify the details of existing tasks.
+- **Delete Tasks**: Remove tasks no longer needed.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Technologies Used
 
-`python3 -m http.server`
+- **Flask**: A lightweight WSGI web application framework.
+- **SQLAlchemy ORM**: Provides an object-relational mapping approach to handle database interactions.
+- **Materialize CSS**: A modern responsive front-end framework based on Material Design.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Getting Started
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-`http_server`
+### Prerequisites
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+What things you need to install the software and how to install them:
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+`python -m pip install flask sqlalchemy materialize-css``
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Installing
 
-To log into the Heroku toolbelt CLI:
+A step by step series of examples that tell you how to get a development env running:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Clone the repository:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+` git clone https://github.com/yourusername/task-manager.git``
+ `cd task-manager``
 
----
+### Install required packages:
 
-Happy coding!
+`pip install -r requirements.txt``
+
+### Initialize the database:
+
+` python manage.py db init``
+ `python manage.py db migrate``
+`python manage.py db upgrade``
+
+### Run the Flask application:
+
+`flask run`
+Navigate to http://localhost:5000 in your web browser to view the app.
