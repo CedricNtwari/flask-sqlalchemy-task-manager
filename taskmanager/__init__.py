@@ -20,3 +20,7 @@ else:
 db = SQLAlchemy(app)
 
 from taskmanager import routes # noqa
+
+# Create the database tables if they don't exist
+with app.app_context():
+    db.create_all()
